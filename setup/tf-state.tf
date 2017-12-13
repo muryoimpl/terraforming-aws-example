@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-northeast-1"
+  region = "${var.region}"
 }
 
 resource "aws_s3_bucket" "terraform-state-talker-signupper" {

@@ -1,2 +1,8 @@
 # terraforming-aws
-terraforming sandbox
+
+## Prerequirements
+
+you need to install below.
+
+- terraform
+- direnv

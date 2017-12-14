@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform-state-talker-signupper" {
-  bucket = "terraform-state-talker-signupper"
+  bucket = "terraform-state-${var.app_name}"
 
   versioning {
     enabled = true
@@ -14,6 +14,6 @@ resource "aws_s3_bucket" "terraform-state-talker-signupper" {
   }
 
   tags {
-    Name = "terraform state of talker-signupper"
+    Name = "terraform state of ${var.app_name}"
   }
 }

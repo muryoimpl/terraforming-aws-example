@@ -3,6 +3,14 @@ variable "env_name" {
   default = "stg"
 }
 
+variable "key_name" {
+  default = "terraform"
+}
+
+variable "public_key_path" {
+  default = "~/tmp/terraform.pub"
+}
+
 # variables which are not changed by environment
 variable "region" {
   default = "ap-northeast-1"
